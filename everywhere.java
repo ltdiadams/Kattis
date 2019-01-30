@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.HashSet;
 //use an array
 
 public class everywhere {
@@ -7,22 +8,23 @@ public class everywhere {
 
     Scanner scan = new Scanner(System.in);
     int testCases = scan.nextInt();
-    int count = 0;
+    int n = 0;
+
+    HashSet<String> places = new HashSet<String>();
 
     for (int i = 0; i < testCases; i++) {
-      int n = scan.nextInt();
+      n = scan.nextInt();
 
-      while (i < n) {
-        String name = scan.nextLine();
-        if (scan.nextLine() != name) {
-          count++;
-          System.out.println("to test the git!!");
+      for (int j = 0; j < n; j++) {
 
-        } else {
+        places.add(scan.next());
           //scan.nextLine();
-        }
       }
-      System.out.println(count);
+
+        System.out.println(places.size());
+        places.clear();
+
     }
   }
 }
+
