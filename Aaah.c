@@ -4,8 +4,8 @@
 
 int main(){
 
-  char first[20];
-  char second[20];
+  char first[999];
+  char second[999];
   /*
   scanf ("%s", first);
   scanf ("%s", second);
